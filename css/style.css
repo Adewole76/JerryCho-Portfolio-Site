@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+h2 :hover{
+  cursor: pointer;
+}
+
 .sec {
   background-color: rgb(10, 10, 10) !important;
 }
