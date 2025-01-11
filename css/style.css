@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-h2 :hover{
+h2:hover{
   cursor: pointer;
 }
 
