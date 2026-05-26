@@ -18,14 +18,12 @@
   <body>
     <section class="sec container-fluid px-0 overflow-hidden">
       <!-- Header Section -->
-      <header class="container header px-0 mb-5">
-        <nav class="navbar container navbar-expand-lg text-white w-100 mt-5">
+      <header class="header px-0 mb-5">
+        <nav class="navbar navbar-expand-lg text-white w-100 mt-0">
           <div class="container">
-            <a
-              class="navbar-brand text-white"
-              target="_blank"
-              href="https://github.com/jerrycho3"
-              >Jerrycho</a
+            <h1
+              class="navbar-brand"
+              >Jerrycho</h1
             >
             <button
               class="navbar-toggler"
@@ -75,17 +73,17 @@
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-sm-2">
                 <li class="nav-item">
                   <a
-                    class="nav-link active text-white"
+                    class="nav-link active text-black"
                     aria-current="page"
                     href="./index.html"
                     >Home
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#about">About </a>
+                  <a class="nav-link text-black" href="#about">About </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#form">Contact </a>
+                  <a class="nav-link text-black" href="#form">Contact </a>
                 </li>
               </ul>
             </div>
@@ -94,66 +92,74 @@
 
         <!-- Name and picture -->
         <div class="na container d-flex mt-5 mb-5" id="about">
-          <div class="text-white">
-            <div data-aos="fade-up" data-aos-duration="2000" class="namep">
+          <div class="text-black">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay = "1000" class="namep">
               <h1 class="name fw-bold">Nice to meet you! I'm Jerry.</h1>
               <div class="lo">
-                <p class="mb-5 mt-4">
+                <p class="description mb-5 mt-4">
                   Based in Nigeria, I'm a back-end developer passionate about
                   building accessible web apps that users love.
                 </p>
               </div>
             </div>
-            <div class="new mb-3 d-flex">
+            <button class="download new mb-3 d-flex">
               <a
                 href="https://drive.google.com/file/d/1S8Fipu4Gcy5lphKdFumqg1UI3o__WV14/view?usp=drive_link"
                 target="_blank"
                 >Download CV</a
               >
-            </div>
+            </button>
           </div>
-          <div class="img" data-aos="fade-up" data-aos-duration="2000">
+          <div class="img">
             <img src="./image/jerry.jpeg" alt="Jerry-Pic" width="100%" />
           </div>
         </div>
+  <!--About me section-->
+        <section class="aboutme-section">
+          <div class="image-title">
+    <h1>What i have to offer</h1>
+    <div class="message-bubble"></div>
+    <img data-aos="zoom-in" data-aos-delay="1000"  class="second-img" src="./image/jerry.jpeg" alt="Jerry-Pic" width="50%" />
+    </div>
+    <div data-aos="fade-left" class="slider-container">
+      <button type="button" class="left-arrow">&larr;</button>
+   <div class="inner-slider">
+  <div class="offer-card">
+<h3>Robust Api development</h3>
+<p class="service-description">
+  I offer clean, 
+  self-documenting APIs with consistent versioning, predictable error handling, 
+  and proper payload validation to
+   ensure front-end systems integrate safely
+</p>
+  </div>
+  <div class="offer-card">
+<h3>Secure Data Management & Storage</h3>
+<p class="service-description"> Well-indexed schemas, 
+  optimized query performance, 
+  and reliable transaction controls (ACID compliance) to ensure data is safe, 
+  accurate, and easily retrievable.</p>
+  </div>
+  <div class="offer-card">
+ <h3>Bulletproof Security & Access Control</h3>
+ <p class="service-description">Hardened defenses against common
+   threats (like the OWASP Top 10), data encryption, and safeguards against API abuse, 
+  such as rate limiting and bot protection.</p>
+  </div>
+   </div>
+   <button type="button" class="right-arrow">&rarr;</button>
+    </div>
+<div>
 
+</div>
+  </section>
         <!-- Horizontal Rule -->
         <div class="hr bg-white container text-white">
           <hr />
         </div>
 
         <!-- Abilties and Experience -->
-        <div
-          class="abilities container text-white d-flex mt-5 justify-content-center"
-        >
-          <div
-            class="acce me-lg-5"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <h2 class="mb-lg-5">NodeJs</h2>
-            <h2>MongoDb</h2>
-          </div>
-
-          <div
-            class="boot ms-lg-5 me-lg-5"
-            data-aos="fade-right"
-            data-aos-duration="2000"
-          >
-            <h2 class="mb-lg-5">Postgre</h2>
-            <h2>TypeScript</h2>
-          </div>
-
-          <div
-            class="tail ms-lg-5"
-            data-aos="fade-right"
-            data-aos-duration="3000"
-          >
-            <h2 class="mb-lg-5">Git</h2>
-            <h2>JavaScript</h2>
-          </div>
-        </div>
-      </header>
+       
 
       <!-- Main Section -->
       <main class="container text-white">
@@ -397,6 +403,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
       AOS.init();
     </script>

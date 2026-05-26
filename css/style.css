@@ -7,13 +7,98 @@
 html {
   scroll-behavior: smooth;
 }
-
-h2:hover{
+nav{
+  background-color: #F8F9FA;
+}
+.header{
+  margin-right: 0;
+  margin-left: 0;
+}
+.header .navbar-brand{
+  color: #0F0F0F;
+  font-size: 36px;
+  font-weight: bold;
+}
+.aboutme-section {
+  background-color: #F8F9FA;
+  display: flex;
+  padding: 5em 8em;     /* Reduced from 15em to 8em */
+  gap: 4em;
+}
+.image-title{
+  flex-grow: 2;
+}
+.second-img{
+  border-radius: 15em;;
+}
+.slider-container{
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  padding: 2em 0 0 0;
+}
+.inner-slider{
+  max-width: 400px;
+  height: 300px;
+}
+.left-arrow, .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;           
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 24px;
   cursor: pointer;
 }
 
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+.inner-slider{
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.offer-card {
+  background-color: white !important;
+  padding: 40px 40px 120px 40px !important;   /* Increased bottom */
+  flex: 0 0 100% !important;
+  min-height: 380px;                          /* Added this */
+  margin: 0 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.service-description{
+  max-width: 250px;
+  font-size: 18px;
+}
+.inner-slider h3{
+  font-size: 36px;
+}
+.navbar-toggle{
+  color: #0F0F0F;
+  font-weight: bold;
+}
+.description{
+  color: #4B5563;
+}
+h2:hover{
+  cursor: pointer;
+}
+.download{
+  background-color: #FACC15;
+}
 .sec {
-  background-color: rgb(10, 10, 10) !important;
+  background-color: white !important;
 }
 
 .navbar-toggler {
@@ -23,6 +108,7 @@ h2:hover{
 .name {
   font-size: 65px;
   width: 90%;
+  color: #0F0F0F;
 }
 
 .line {
@@ -49,8 +135,21 @@ h2:hover{
 
 .img {
   width: 50%;
+  filter: brightness(130%);
+  display: block;
+  transform-origin: bottom; 
+  animation: growBottomToTop 0.9s cubic-bezier(0.25, 1, 0.5, 1)  forwards;
 }
-
+@keyframes growBottomToTop{
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
 .lo {
   font-size: 1.25rem;
   width: 50%;
