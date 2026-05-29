@@ -52,3 +52,8 @@ leftBtn.addEventListener('click', () => {
         updateSlider();
     }
 });
+
+setInterval(() => {
+    currentInde = (currentInde + 1) % totalSlides;
+    updateSlider();
+}, 4000);
