@@ -26,7 +26,22 @@ nav{
   gap: 4em;
 }
 .image-title{
+  position: relative;
   flex-grow: 2;
+}
+.message-bubble{
+  position: absolute;
+  right: 15em; 
+  z-index: 100;
+  padding: 1.5em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-top-left-radius: 2em;
+  background-color: #FACC15;
+}
+.request-message{
+  color: black;
+  max-width: 400px;
 }
 .second-img{
   border-radius: 15em;;
@@ -47,7 +62,7 @@ nav{
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;           
-  background: rgba(0, 0, 0, 0.7);
+  background: #FACC15;
   color: white;
   border: none;
   width: 45px;
@@ -138,8 +153,8 @@ h2:hover{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.75);
-  color: white;
+  background: #FACC15;
+  color: black;
   border: none;
   font-size: 28px;
   width: 55px;
