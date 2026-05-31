@@ -7,6 +7,13 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+  position: relative;
+}
+.fix-bar{
+  position: fixed;
+  top: 0;
+}
 nav{
   background-color: #F8F9FA;
 }
@@ -45,6 +52,36 @@ nav{
 }
 .second-img{
   border-radius: 15em;;
+}
+.picture-messages{
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0 2em 0;
+  position: relative;
+}
+.messages{
+ position: absolute;
+ background-color: #F8F9FA;
+ border-top-left-radius: 2em;
+ border-bottom-left-radius: 2em;
+ border-top-right-radius: 2em;
+}
+.messages p{
+ margin: 0;
+}
+.bubble1{
+  top: 10%;
+  left: 26%;
+  padding: 2em 1em 2em 1em;
+}
+.image-message{
+  width: 450px;
+  object-fit: cover;
+  border-radius: 2em;
+  filter: brightness(120%);
 }
 .slider-container{
   display: flex;
@@ -167,12 +204,26 @@ h2:hover{
 .left-image-button  { left: 10px; }
 .right-image-button { right: 10px; }
 
+.left-image-button,.right-image-button{
+  transition: background-color 0.15s, color 0.15s; 
+}
 .left-image-button:hover,
 .right-image-button:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
 }
 .download{
   background-color: #FACC15;
+}
+.third-image{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15em;
+  
+}
+.skills-languages{
+  background-color: #F1F3F5;
 }
 .sec {
   background-color: white !important;
