@@ -9,6 +9,7 @@ html {
 }
 body{
   position: relative;
+  padding-top: 4em;
 }
 .fix-bar{
   position: fixed;
@@ -270,9 +271,6 @@ h2:hover{
   background-color: white !important;
 }
 
-.navbar-toggler {
-  border: 1px solid white !important;
-}
 
 .name {
   font-size: 65px;
@@ -627,13 +625,15 @@ textarea {
 }
 .prose{
   background-color: #FACC15;
-  width: 85%;
+  width: 8%;
   height: 100%;
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
   animation-name: increselength;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 @keyframes increselength {
   from{
@@ -642,4 +642,92 @@ textarea {
   to{
     width: 85%;
   }
+}
+.custom-navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  max-width: 580px;
+  z-index: 1000;
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 8px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0F0F0F;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #0F0F0F;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #FACC15;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsive */
+/* Desktop: Show links, Hide hamburger */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: block !important;     /* Force links to show */
+  }
+  
+  .navbar-toggler {
+    display: none !important;      /* Hide hamburger on large screens */
+  }
+}
+
+/* Mobile: Hide links, Show hamburger */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: none !important;
+  }
+  
+  .navbar-toggler {
+    display: block !important;
+  }
+}
+.custom-navbar {
+  transform: translateX(-50%) !important;
 }
