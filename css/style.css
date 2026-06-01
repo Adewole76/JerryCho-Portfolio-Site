@@ -657,13 +657,8 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   padding: 8px 20px;
-}
-
-.navbar-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
 
 .navbar-brand {
@@ -673,11 +668,16 @@ textarea {
 }
 
 .navbar-links {
-  display: flex;
   gap: 30px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-top: 0.5em;
+}
+
+.custom-navbar ul li{
+  display: inline-block;
+  padding: 5px 10px;
+  vertical-align: baseline;
 }
 
 .navbar-links a {
@@ -690,20 +690,6 @@ textarea {
 .navbar-links a:hover,
 .navbar-links a.active {
   color: #FACC15;
-}
-
-.theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.4rem;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.theme-toggle:hover {
-  background: rgba(0, 0, 0, 0.1);
 }
 
 /* Mobile Responsive */
