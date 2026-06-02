@@ -43,7 +43,8 @@ nav{
   max-width: 400px;
 }
 .second-img{
-  border-radius: 15em;;
+  border-radius: 15em;
+  max-width: 400px;
 }
 .picture-messages{
   width: 100%;
@@ -131,11 +132,10 @@ nav{
   overflow: hidden;
   position: relative;
   flex-grow: 1;
+  align-self: flex-start;
   padding: 2em 0 0 0;
 }
 .inner-slider{
-  max-width: 400px;
-  height: 300px;
 }
 .left-arrow, .right-arrow {
   position: absolute;
@@ -162,12 +162,13 @@ nav{
 .inner-slider{
   display: flex;
   transition: transform 0.5s ease;
+  max-width: 400px;
 }
 .offer-card {
   background-color: white !important;
   padding: 40px 40px 120px 40px !important;
   flex: 0 0 100% !important;
-  min-height: 380px;
+  max-height: 380px;
   margin: 0 15px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -650,7 +651,7 @@ textarea {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 40%;
+  width: 70%;
   max-width: 580px;
   z-index: 1000;
   border-radius: 60px;
@@ -744,6 +745,10 @@ textarea {
   .messages{
     padding: 1.5em;
   }
+  .aboutme-section{
+    padding-left: 5em !important;
+    padding-right: 5em !important;
+  }
   .bubble1{
     top: 10%;
     left: 10em;
@@ -792,6 +797,18 @@ textarea {
     max-width: 270px;
   }
 }
+@media (max-width: 1067px) {
+  .aboutme-section{
+    padding-right: 2.5em !important;
+    padding-left: 3em !important;
+  }
+  .inner-slider{
+    max-width: 360px;
+  }
+  .second-img{
+    max-width: 350px;
+  }
+}
 @media (max-width: 937px) {
   .image-message{
     max-width: 420px !important;
@@ -805,6 +822,15 @@ textarea {
   }
   .navbar-links{
     display: none;
+  }
+  .inner-slider{
+    max-width: 320px;
+  }
+  .service-description{
+    font-size: 15px;
+  }
+  .inner-slider h3{
+    font-size: 28px;
   }
   .bubble1{
     top: 10%;
@@ -996,5 +1022,41 @@ textarea {
   }
   .bubble5{
     right: 2rem;
+  }
+}
+@media (max-width: 460px) {
+  .image-message{
+    max-width: 320px !important;
+  }
+  .bubble1 p{
+    max-width: 120px;
+  }
+  .bubble4{
+    top: 45%;
+  }
+  .bubble2{
+    top: 15%;
+    right: 0.3rem;
+  }
+  .bubble2 p{
+    max-width: 120px;
+  }
+  .bubble5 {
+    top: 70%;
+    right: 0.5rem;
+  }
+  .bubble3{
+    left: 0.3rem;
+  }
+  .bubble3 p{
+    max-width: 140px;
+  }
+  .bubble4 p{
+    max-width: 148px;
+  }
+}
+@media (max-width: 376px) {
+  .messages p{
+    font-size: 11px;
   }
 }
