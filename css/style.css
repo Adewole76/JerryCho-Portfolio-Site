@@ -1135,11 +1135,25 @@ textarea {
     max-width: 300px;
   }
   .service-description{
-    max-width: 10px;
+    max-width: 298px !important;
+  }
+  .left-arrow{
+    left: 10rem;
+  }
+  .right-arrow{
+    left: 14rem;
+  }
+  .card2 p{
+   margin-bottom: 1.8em;
   }
 }
 @media (max-width: 376px) {
   .messages p{
     font-size: 11px;
+  }
+}
+@media (max-width: 720px) {
+  .service-description{
+    max-width: 300px !important;
   }
 }
