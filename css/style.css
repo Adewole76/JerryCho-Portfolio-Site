@@ -41,6 +41,7 @@ nav{
 .request-message{
   color: black;
   max-width: 400px;
+  margin: 0;
 }
 .second-img{
   border-radius: 15em;
@@ -58,7 +59,6 @@ nav{
  position: absolute;
  background-color: #F8F9FA;
  padding: 2em 1em 2em 1em;
- filter: drop-shadow(0 4px 8px rgba(250, 204, 21, 0.45));
 }
 .messages p{
  margin: 0;
@@ -976,6 +976,7 @@ textarea {
     justify-content: center;
     align-items: center;
   }
+  
   .slider-container{
     display: flex;
     justify-content: center;
@@ -991,7 +992,7 @@ textarea {
     right: 15rem;
   }
   .message-bubble{
-    right: 40%;
+    right: -6em;
   }
   .second-img{
     max-width: 410px !important;
@@ -1006,6 +1007,8 @@ textarea {
     padding-bottom: 2em !important;
   }
 }
+
+
 @media (max-width: 748px) {
   .image-message{
     max-width: 400px !important;
@@ -1065,6 +1068,8 @@ textarea {
     max-width: 270px;
   }
 }
+
+
 @media (max-width: 512px){
   .offer-card h3{
     max-width: 360px;
@@ -1099,10 +1104,19 @@ textarea {
     right: 2rem;
   }
 }
+@media (max-width: 490px) {
+  .message-bubble{
+    right: -5em;
+  }
+}
 @media (max-width: 460px) {
   .image-message{
     max-width: 320px !important;
   }
+  .request-message{
+    max-width: 150px !important;
+  }
+  
   .bubble1 p{
     max-width: 120px;
   }
