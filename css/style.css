@@ -1110,11 +1110,18 @@ textarea {
   }
 }
 @media (max-width: 460px) {
+  .aboutme-section h1{
+    text-align: center;
+  }
   .image-message{
     max-width: 320px !important;
   }
+  .message-bubble{
+    right: -2.5em;
+  }
   .request-message{
-    max-width: 150px !important;
+    max-width: 120px !important;
+    font-size: 14px;
   }
   
   .bubble1 p{
@@ -1159,6 +1166,11 @@ textarea {
   }
   .card2 p{
    margin-bottom: 1.8em;
+  }
+}
+@media (max-width: 379px) {
+  .message-bubble{
+    right: -1em;
   }
 }
 @media (max-width: 376px) {
