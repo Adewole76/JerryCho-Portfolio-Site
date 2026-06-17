@@ -599,11 +599,38 @@ textarea {
 }
 
 /* SKILLS AND LANGUAGES*/
+.heading-image{
+  display: flex;
+  justify-content: space-between;
+}
 .heading-image h4{
   font-family: "Space Grotesk";
 }
-
-
+.skills-tags{
+  display: flex;
+  flex-direction: row;
+}
+.skills-tags h5{
+  font-family: "Space Grotesk"
+}
+.skill p{
+  margin: 0;
+}
+.skill img{
+  width: 90px;
+}
+.skill article{
+  display: inline-block;
+}
+.core-tag{
+  background-color: #facc1576;
+  padding: 0 0 0 5px;
+}
+.comfort-tag{
+  background-color: rgba(154, 108, 182, 0.225);
+  padding: 2px 4px;
+  border-radius: 10px;
+}
 .skills-languages .accent{
   width: 64px; 
   height: 64px; 
