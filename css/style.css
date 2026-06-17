@@ -598,22 +598,18 @@ textarea {
   }
 }
 
-/* progress bars*/
-.image-skills{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.skilled-languages{
-  margin-left: 2em;
-}
-.skill-logo{
-  width: 40px;
-  display: inline-block;
-  vertical-align: top;
+/* SKILLS AND LANGUAGES*/
+.heading-image h4{
+  font-family: "Space Grotesk";
 }
 
 
+.skills-languages .accent{
+  width: 64px; 
+  height: 64px; 
+  border-radius: 50%; 
+  object-fit: cover;
+}
 .custom-navbar {
   position: fixed;
   top: 20px;
