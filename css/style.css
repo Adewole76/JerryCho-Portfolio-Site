@@ -266,10 +266,7 @@ h2:hover{
   border-radius: 15em;
   
 }
-.skills-languages{
-  padding: 1em 0 1em 0;
-  background-color: #F1F3F5;
-}
+
 .sec {
   background-color: white !important;
 }
@@ -615,37 +612,8 @@ textarea {
   display: inline-block;
   vertical-align: top;
 }
-.bar{
-  display: inline-block;
-  width: 450px;
-  height: 50px;
-  border: 4px solid black;
-  margin-bottom: 1em;
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-}
-.prose{
-  background-color: #FACC15;
-  width: 8%;
-  height: 100%;
-  border-top-left-radius: 2em;
-  border-bottom-left-radius: 2em;
-  animation-name: increselength;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-}
-@keyframes increselength {
-  from{
-    width: 8%;
-  }
-  to{
-    width: 85%;
-  }
-}
+
+
 .custom-navbar {
   position: fixed;
   top: 20px;
