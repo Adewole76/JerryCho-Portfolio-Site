@@ -33,6 +33,7 @@ nav{
   padding: 5em 8em;     /* Reduced from 15em to 8em */
   gap: 4em;
 }
+
 .image-title{
   position: relative;
   flex-grow: 2;
@@ -207,6 +208,7 @@ h2:hover{
 }
 .project-section h1{
   font-family: "Space Grotesk";
+  padding-left: 1em;
 }
 .project {
   min-width: 100%;
@@ -612,6 +614,10 @@ textarea {
 .heading-image{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1em;
+}
+.heading-image h4{
+  font-size: 32.428px;
 }
 .heading-image h4{
   font-family: "Space Grotesk";
