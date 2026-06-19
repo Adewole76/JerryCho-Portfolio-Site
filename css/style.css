@@ -669,33 +669,21 @@ textarea {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
+  width: 30%;
   max-width: 580px;
   z-index: 1000;
-  border-radius: 60px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  background: rgba(248, 249, 250, 0.85);
+  backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(15, 15, 15, 0.08);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   padding: 8px 20px;
   display: flex;
-  justify-content: space-between;
-}
-.list-section{
-  position: relative;
-}
-.hamburger-menu{
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 40px;
-  display: none;
+  justify-content: center;
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #0F0F0F;
+.list-section {
+  position: relative;
 }
 
 .navbar-links {
@@ -705,26 +693,62 @@ textarea {
   padding-top: 0.5em;
 }
 
-.custom-navbar ul li{
+.custom-navbar ul li {
   display: inline-block;
   padding: 5px 10px;
   vertical-align: baseline;
 }
 
 .navbar-links a {
+  display: inline-block;
   text-decoration: none;
   color: #0F0F0F;
   font-weight: 500;
-  transition: all 0.3s;
+  transition: transform 0.25s ease, color 0.3s ease;
 }
 
 .navbar-links a:hover,
 .navbar-links a.active {
   color: #FACC15;
+  transform: scale(1.08);
 }
 
-.hamburger-menu{
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
 
+@media (max-width: 768px) {
+  .custom-navbar {
+    width: auto;
+    padding: 10px 20px;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 14px);
+    right: 0;
+    min-width: 160px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 10px;
+    background: rgba(248, 249, 250, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(15, 15, 15, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+    width: 26px;
+  }
 }
 /* Mobile Responsive */
 /* Desktop: Show links, Hide hamburger */

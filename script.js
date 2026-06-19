@@ -57,3 +57,9 @@ setInterval(() => {
     currentInde = (currentInde + 1) % totalSlides;
     updateSlider();
 }, 4000);
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.navbar-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
